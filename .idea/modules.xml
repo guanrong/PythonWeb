@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Python Web补充班.iml" filepath="$PROJECT_DIR$/.idea/Python Web补充班.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Tornado框架班/.idea/Tornado框架班.iml" filepath="$PROJECT_DIR$/../Tornado框架班/.idea/Tornado框架班.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ajax-test/.idea/ajax-test.iml" filepath="$PROJECT_DIR$/../ajax-test/.idea/ajax-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../py_case/.idea/py_case.iml" filepath="$PROJECT_DIR$/../py_case/.idea/py_case.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../.idea/pychram.iml" filepath="$PROJECT_DIR$/../.idea/pychram.iml" />
+    </modules>
+  </component>
+</project>

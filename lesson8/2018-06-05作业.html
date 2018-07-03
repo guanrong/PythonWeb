@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        #btn ul{
+            overflow: hidden;
+        }
+        #btn ul li{
+            width: 100px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            background: #c4ff7b;
+            color: red;
+            font-size: 13px;
+            float: left;
+            margin: 20px 20px 20px 0;
+        }
+        #btn ul li:hover{
+            cursor: pointer;
+        }
+        #pic{
+            width: 500px;
+            height: 333px;
+            border: 1px solid red;
+            position: relative;
+        }
+        #pic ul li{
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+        #pic ul li.show{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!--div#btn>ul>li{修改$}*4-->
+    <div id="btn">
+        <ul>
+            <li>图片1</li>
+            <li>图片2</li>
+            <li>图片3</li>
+            <li>图片4</li>
+        </ul>
+    </div>
+    <div id="pic">
+        <ul>
+            <li class="show"><img src="http://www.taopic.com/uploads/allimg/140421/318743-140421213T910.jpg" width="500px" height="333px" alt=""></li>
+            <li><img src="http://img.zcool.cn/community/018d4e554967920000019ae9df1533.jpg@900w_1l_2o_100sh.jpg" width="500px" height="333px" alt=""></li>
+            <li><img src="http://img.zcool.cn/community/01f09e577b85450000012e7e182cf0.jpg@1280w_1l_2o_100sh.jpg" width="500px" height="333px" alt=""></li>
+            <li><img src="http://img.zcool.cn/community/014a52554064690000005b03d35d4e.jpg@2o.jpg" width="500px" height="333px" alt=""></li>
+        </ul>
+    </div>
+    <script>
+        var aBtn = document.querySelectorAll("#btn ul li");
+        var aPic = document.querySelectorAll("#pic ul li");
+        var len = aPic.length;
+        var first = 0;
+        for(var i = 0 ; i <len ; i ++){
+            aBtn[i].index = i;
+            aBtn[i].onclick = function () {
+                aPic[first].className = "";         //让点击之前显示的图片隐藏
+                first = this.index;                 //把当前点击的下标赋值给first
+                aPic[first].className = "show";     //当前点击的下标 加上className
+            }
+        }
+    </script>
+</body>
+</html>
